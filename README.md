@@ -9,6 +9,7 @@ This project implements AES-128-CTR encryption/decryption using CUDA C. It suppo
 - CUDA-based parallel implementation
 - CPU baseline comparison using 'tiny-AES.c'
 - Benchmarking between CPU and GPU versions
+- Generation of random input file of user-defined size for testing
 
 ## Repository Structure
 
@@ -44,6 +45,15 @@ Run:
 ```
 
 Note: Within the main CUDA implementation (aes_cuda_ctr.cu) are printf statements for debugging/benchmarking. For cleaner output and better performance, you may wnat to remove or comment these out.
+
+### Usage
+The test program allows you to:
+- Provide an input file encryption/decryption, or
+- Generate a file with random bytes
+
+When prompted, you can enter a desired file size (in bytes), and the the program will generate a random inpute file for testing.
+
+Note: When prompted for input filename, type the full name of file with extension. The same for encryption and decryption, type the full name of what you intend the file extension to be. The test code does not append any file extension.
 
 ## Main Code Locations
 - Cuda kernel / GPU implementation:
