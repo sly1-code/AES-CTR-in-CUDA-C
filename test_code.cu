@@ -139,7 +139,7 @@ int main(){
 		printf("Loaded file (%zu bytes).\n", len);
 	}
 
-	if(!get_line("Encrypted output file (.bin): ", encrypted_name, sizeof(encrypted_name))) return 1;
+	if(!get_line("Encrypted output file : ", encrypted_name, sizeof(encrypted_name))) return 1;
 	if(!get_line("Decryped output file: ", decrypted_name, sizeof(decrypted_name))) return 1;
 
 	unsigned char *cpu_cipher = (unsigned char *)malloc(len);
