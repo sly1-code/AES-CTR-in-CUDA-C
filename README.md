@@ -2,10 +2,10 @@
 Final project for CS 4220: a parallel AES-CTR implementation using CUDA C.
 
 ## Description
-This project implements AES-CTR encryption/decryption using CUDA C. It support encrypting and decrypting of text files, then compared the CUDA implementation against a sequential CPU implementation based on 'tiny-AES.c'.
+This project implements AES-128-CTR encryption/decryption using CUDA C. It support encrypting and decrypting of text files, then compared the CUDA implementation against a sequential CPU implementation based on 'tiny-AES.c'.
 
 ## Features
-- AES-CTR encryption and decryption
+- AES-128 (CTR Mode) encryption and decryption
 - CUDA-based parallel implementation
 - CPU baseline comparison using 'tiny-AES.c'
 - Benchmarking between CPU and GPU versions
