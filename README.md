@@ -31,8 +31,17 @@ This project implements AES-128-CTR encryption/decryption using CUDA C. It suppo
 - Linux, WSL, or another CUDA-supported environment
 
 ## How to run
+Compile:
+
+```bash
 nvcc test_code.cu aes_cuda_ctr.cu aes_key.c aes.c -o aes_ctr
+```
+
+Run:
+
+```bash
 ./aes_ctr
+```
 
 Note: Within the main CUDA implementation (aes_cuda_ctr.cu) are printf statements for debugging/benchmarking. For cleaner output and better performance, you may wnat to remove or comment these out.
 
@@ -44,7 +53,7 @@ Note: Within the main CUDA implementation (aes_cuda_ctr.cu) are printf statement
   aes_key.c, aes_key.h
   
 - Demo, tests, and benchmarks:
-  test-code.cu
+  test_code.cu
 
 - CPU comparison implementation:
   aes.c / aes.h
